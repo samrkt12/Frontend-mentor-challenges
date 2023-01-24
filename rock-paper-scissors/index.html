@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock, Paper, Scissors</title>
+    <!-- Score Rules You Picked The House Picked You Win You Lose Play Again -->
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="title">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+        <div class="score-container">
+          <p>SCORE</p>
+          <h1 id="score">1</h1>
+        </div>
+      </header>
+      <div class="choice">
+        <div id="paper" value="paper" class="hand paper">
+          <img value="paper" src="./images/icon-paper.svg" alt="paper" />
+        </div>
+        <div id="scissor" class="hand scissor">
+          <img src="./images/icon-scissor.svg" alt="scissor" />
+        </div>
+        <div id="rock" class="hand rock">
+          <img src="./images/icon-rock.svg" alt="rock" />
+        </div>
+      </div>
+      <div class="game hidden">
+        <div id="player" class="game-card">
+          <div class="game-title">
+            <h2>YOU PICKED</h2>
+          </div>
+          <!-- <div class="game-hand rock">
+            <img src="./images/icon-paper.svg" alt="paper" />
+          </div> -->
+        </div>
+
+        <div class="result hidden">
+          <h1 id="status">YOU LOSE</h1>
+          <button class="play-again">PLAY AGAIN</button>
+        </div>
+
+        <div id="cpu" class="game-card">
+          <div class="game-title">
+            <h2>THE HOUSE PICKED</h2>
+          </div>
+          <div id="cpu-image" class="blank">
+            <!-- <img src="./images/icon-paper.svg" alt="paper" /> -->
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="reset">RESET</button>
+        <button class="rules">RULES</button>
+      </div>
+    </div>
+    <div class="modal hidden">
+      <div class="modal-header">
+        <h1>Rules</h1>
+        <img src="./images/icon-close.svg" class="close-modal" />
+      </div>
+      <div class="rules-img">
+        <img src="./images/image-rules.svg" />
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
