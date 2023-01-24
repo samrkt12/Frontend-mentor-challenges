@@ -5,13 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor Projects</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+      * {
+        margin: 0;
+      }
+      body {
+        height: 100vh;
+        background-image: linear-gradient(
+          109.6deg,
+          rgba(156, 252, 248, 1) 11.2%,
+          rgba(110, 123, 251, 1) 91.1%
+        );
+        font-family: "Poppins", sans-serif;
+        color: #4d0e0e;
+      }
+      li {
+        margin: 20px 10px;
+        transition: all 0.3s ease;
+      }
+      h1 {
+        padding: 30px;
+        letter-spacing: 2px;
+        position: relative;
+      }
+      a {
+        text-decoration: none;
+        color: #ae593d;
+        font-size: 1.3rem;
+        transition: all 0.3s ease;
+      }
+      a:hover {
+        color: #8b381c;
+      }
+      li:hover {
+        transform: translate(0, -5px);
+      }
+    </style>
   </head>
   <body>
     <h1>Frontend Mentor Challenges</h1>
 
-    <a href="./sunnyside-agency-landing-page/index.html"
-      >Sunnyside Agency Landing Page</a
-    >
-    <a href="./rock-paper-scissors/index.html">Rock Paper Scissors</a>
+    <ul>
+      <li>
+        <a href="./sunnyside-agency-landing-page/index.html"
+          >Sunnyside Agency Landing Page</a
+        >
+      </li>
+      <li>
+        <a href="./rock-paper-scissors/index.html">Rock Paper Scissors</a>
+      </li>
+    </ul>
   </body>
 </html>
